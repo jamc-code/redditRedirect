@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "reddit_redirect",
+    "version": "1.0",
+    "description": "Redirect all reddit links to a chosen redlib instance.",
+    "host_permissions": [
+        "*://*.reddit.com/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*.reddit.com/*"
+            ],
+            "js": [
+                "redditRedirect.js"
+            ]
+        }
+    ]
+}

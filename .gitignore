@@ -1,0 +1,5 @@
+*.xpi
+*.DS_Store
+*.zip
+build/*
+*.pem

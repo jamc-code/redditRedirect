@@ -1,11 +1,22 @@
 {
     "manifest_version": 3,
     "name": "reddit_redirect",
+    "description": "Automatically redirect reddit links to a chosen redlib instance.",
     "version": "1.0",
-    "description": "Redirect all reddit links to a chosen redlib instance.",
+    "permissions": [
+        "storage"
+    ],
     "host_permissions": [
         "*://*.reddit.com/*"
     ],
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "jlearning@tuta.io"
+        }
+    },
+    "options_ui": {
+        "page": "settings.html"
+    },
     "content_scripts": [
         {
             "matches": [

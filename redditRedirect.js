@@ -16,6 +16,6 @@ function onGot(item) {
     redirectLink(document.URL, redlib_instance);
 }
 
-
+window.stop(); // Immediately stop loading reddit
 const getting = browser.storage.sync.get("redlib_instance");
 getting.then(onGot, onError);

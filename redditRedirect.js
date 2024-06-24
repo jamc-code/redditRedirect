@@ -17,6 +17,5 @@ function onGot(item) {
 }
 
 
-// redirectLink(document.URL);
 const getting = browser.storage.sync.get("redlib_instance");
 getting.then(onGot, onError);
